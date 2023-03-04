@@ -1,0 +1,51 @@
+.container{
+    width:100%;
+    height:30%;
+    padding:0px;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    table-layout: auto;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #c4c6c8;
+    color: #c4c6c8;
+}
+
+body{
+    background-color: #1f2123;
+}
+
+button{
+    background-color: green;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header {
+    padding: 20px;
+    background-color: #141618;
+    overflow: auto;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+}
+
+.logo {
+    float: left;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+}
+
+* {
+    font-family: sans-serif;
+}
