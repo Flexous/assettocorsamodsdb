@@ -23,6 +23,7 @@ button{
     border: none;
     text-decoration: none;
     font-size: 16px;
+    color: white;
 }
 
 .header {
@@ -44,6 +45,10 @@ img {
     text-decoration: none;
     color: white;
     padding-left: 50px;
+}
+
+.control-label{
+    margin-right: 60px;
 }
 
 * {

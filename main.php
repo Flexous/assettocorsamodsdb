@@ -1,37 +1,15 @@
-<?php
+<html>
 
-try
-{
-    $dir = 'sqlite:db\mods.db';
-    $con=new PDO($dir);
-    $con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    //echo 'connected';
-}
-catch(PDOException $e)
-{
-    echo '<br>'.$e->getMessage();
-}
+<?php include('header.php') ?>
 
-$searchErr = '';
-$team_details='';
-$driver_details='';
-if(isset($_POST['save']))
-{
-    if(!empty($_POST['search']))
-    {
-        $search = $_POST['search'];
-        $stmt = $con->prepare("select * from teams where name like '%$search%'");
-        $stmt->execute();
-        $team_details = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        $stmt = $con->prepare("select * from drivers where name like '%$search%'");
-        $stmt->execute();
-        $driver_details = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-    else
-    {
-        $searchErr = "Please enter the information";
-    }
-}
-
-?>
+<body>
+<div class="container">
+    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisici elit,
+        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
+        Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+</body>
+</html>
